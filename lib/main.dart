@@ -96,6 +96,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           
           children: <Widget>[
+            const Text(
+              'You have pushed the button this many times:',
+            ),
+            Text(
+              '$_counter',
+              style: Theme.of(context).textTheme.headline4,
+            ),
             Column(
               //测试Row对齐方式，排除Column默认居中对齐的干扰
               crossAxisAlignment: CrossAxisAlignment.start,
