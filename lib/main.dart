@@ -189,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Wrap(
-              spacing: 8.0, // 主轴(水平)方向间距
+              spacing: 200.0, // 主轴(水平)方向间距
               runSpacing: 4.0, // 纵轴（垂直）方向间距
               alignment: WrapAlignment.center, //沿主轴方向居中
               children: <Widget>[
@@ -209,16 +209,22 @@ class _MyHomePageState extends State<MyHomePage> {
                   avatar: CircleAvatar(backgroundColor: Colors.blue, child: Text('J')),
                   label: Text('Laurens'),
                 ),
+                Chip(
+                  avatar: CircleAvatar(backgroundColor: Colors.blue, child: Text('C')),
+                  label: Text('Carrefi'),
+                ),
               ],
             ),
-            Align(
-              widthFactor: 2,
-              heightFactor: 2,
-              alignment: Alignment.topRight,
-              child: FlutterLogo(
-                size: 60,
+            Container(
+              height: 120.0,
+              color: Colors.blue.shade50,
+              child: Align(
+                alignment: Alignment.topRight,
+                child: FlutterLogo(
+                  size: 60,
+                ),
               ),
-            ),
+            )
           ],
         ),
       ),
